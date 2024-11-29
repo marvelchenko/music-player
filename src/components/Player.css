@@ -1,0 +1,97 @@
+.custom-container{
+    width: 500px;
+    background: rgb(28, 2, 113);
+    border: 2px solid rgb(255, 65, 128) ;
+    border-radius: 10px; /* Makes the corners rounded with a radius of 10px */
+    background-color: rgba(15, 15, 15, 0.5);
+    padding: 2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Space between image and text */
+  }
+  
+  /* Style the image */
+  .img img {
+    width: 100px; /* Adjust image size */
+    height: 100px; /* Keep image square */
+    object-fit: cover; /* Ensure the image fits properly */
+    border-radius: 10px; /* Optional circular image */
+    border: 2px solid #fbcad6; /* Optional border */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .img img:hover{
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6); /* Add a shadow */
+    border-color: #fa3c68; /* Optional border color change */
+  }
+  
+  /* Style the artist text */
+  .img-icon {
+    margin: 0;
+    color: #fff; /* White text */
+    font-size: 1rem; /* Adjust text size */
+  }
+
+  .img-icon p {
+    margin: 0;
+    color: #fff; /* White text */
+    font-size: 20px; /* Adjust text size */
+  }
+
+  .player-progress {
+    padding: 2rem;
+    
+  }
+
+  .p-iconCircle{
+    color: #fff;
+    font-size: 60px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .p-iconCircle:hover{
+    transform: scale(1.1); /* Slightly enlarge the image */
+    color: #ff0000;
+  }
+
+  .p-icon:hover{
+    transform: scale(1.1); /* Slightly enlarge the image */
+    color: #ff0000;
+  }
+  
+  .p-icon{
+    font-size: 20px;
+    transition: transform 0.3s ease;
+
+  }
+
+  .player-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  @media (max-width: 480px) {
+    .custom-container{
+      width: 90%;
+      background: rgb(28, 2, 113);
+      border: 2px solid rgb(255, 65, 128) ;
+      border-radius: 10px; /* Makes the corners rounded with a radius of 10px */
+      background-color: rgba(15, 15, 15, 0.5);
+      padding: 2rem;
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  }
