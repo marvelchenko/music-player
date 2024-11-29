@@ -7,7 +7,7 @@ import { FaCirclePause } from 'react-icons/fa6';
 const Player = ({ song, isPlaying, togglePlayPause, nextSong, prevSong, currentTime, duration, handleProgressBarClick }) => {
     const progress = (currentTime / duration) * 100;
   return (
-    <div className="custom-container">
+    <div className="custom-container w-100 w-sm-50 w-md-50">
       <div className="img-icon">
         <div className="img">
           <img src={song.img} alt={song.title} />
@@ -16,7 +16,7 @@ const Player = ({ song, isPlaying, togglePlayPause, nextSong, prevSong, currentT
         <p>{song.title}</p>
       </div>
       <div className="player-progress">
-        <ProgressBar now={progress} variant="danger" style={{ width: '400px', height: '8px' }} onClick={handleProgressBarClick} />
+        <ProgressBar now={progress} variant="danger" className='progress' onClick={handleProgressBarClick}  />
       </div>
 
       <div className="player-icon">
