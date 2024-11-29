@@ -49,7 +49,11 @@
 
   .player-progress {
     padding: 2rem;
-    
+  }
+
+  .progress{
+    width: 400px;
+    height: 0%;
   }
 
   .p-iconCircle{
