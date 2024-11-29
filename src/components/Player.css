@@ -88,14 +88,24 @@
   }
 
   /* Media Queries */
+
 @media (max-width: 480px) {
   .custom-container {
       width: 95%;
+      max-width: 300px;
+  }
+  .progress{
+    width: 250px;
+
   }
 }
 
 @media (min-width: 720px) {
   .custom-container {
       width: 40%;
+      max-width: 400px;
+  }
+  .progress{
+    width: 300px;
   }
 }
